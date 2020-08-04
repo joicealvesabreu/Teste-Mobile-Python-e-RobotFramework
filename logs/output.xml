@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200803 20:22:06.077" rpa="false">
+<suite id="s1" name="Login" source="C:\roboWeek_Mobile\ninjachef\test\login.robot">
+<test id="s1-t1" name="Acessar cardapio">
+<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Dado que desejo comer &quot;massas&quot;">
+<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-t3" name="Quando submeto meu email &quot;joice123@gmail.com&quot;">
+<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
+</test>
+<test id="s1-t4" name="Entao devo ver a lista de pratos do tipo escolhido">
+<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
+</test>
+<doc>Aqui testes login mobile</doc>
+<status status="FAIL" starttime="20200803 20:22:06.077" endtime="20200803 20:22:06.292"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4">Critical Tests</stat>
+<stat pass="0" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
