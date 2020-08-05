@@ -1,32 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200803 20:22:06.077" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200805 14:15:35.890" rpa="false">
 <suite id="s1" name="Login" source="C:\roboWeek_Mobile\ninjachef\test\login.robot">
 <test id="s1-t1" name="Acessar cardapio">
-<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
-</test>
-<test id="s1-t2" name="Dado que desejo comer &quot;massas&quot;">
-<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
-</test>
-<test id="s1-t3" name="Quando submeto meu email &quot;joice123@gmail.com&quot;">
-<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
-</test>
-<test id="s1-t4" name="Entao devo ver a lista de pratos do tipo escolhido">
-<status status="FAIL" starttime="20200803 20:22:06.292" endtime="20200803 20:22:06.292" critical="yes">Test case contains no keywords.</status>
+<kw name="Open Session" library="base" type="setup">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http:/localhost:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=9</arg>
+<arg>deviceName=JoiceAbreu</arg>
+<arg>app=${EXECDIR}/app/ninjachef.apk</arg>
+<arg>udid=emulator-5554</arg>
+<arg>adbExecTimeout=12000</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200805 14:15:36.113" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20200805 14:15:36.111" endtime="20200805 14:15:36.114"></status>
+</kw>
+<msg timestamp="20200805 14:15:36.114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200805 14:15:36.120" level="FAIL">LocationValueError: No host specified.</msg>
+<status status="FAIL" starttime="20200805 14:15:36.110" endtime="20200805 14:15:36.120"></status>
+</kw>
+<status status="FAIL" starttime="20200805 14:15:36.110" endtime="20200805 14:15:36.120"></status>
+</kw>
+<kw name="Close Session" library="base" type="teardown">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200805 14:15:36.123" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20200805 14:15:36.122" endtime="20200805 14:15:36.123"></status>
+</kw>
+<msg timestamp="20200805 14:15:36.124" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200805 14:15:36.127" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20200805 14:15:36.121" endtime="20200805 14:15:36.127"></status>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200805 14:15:36.129" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20200805 14:15:36.128" endtime="20200805 14:15:36.129"></status>
+</kw>
+<msg timestamp="20200805 14:15:36.130" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200805 14:15:36.132" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20200805 14:15:36.127" endtime="20200805 14:15:36.132"></status>
+</kw>
+<status status="FAIL" starttime="20200805 14:15:36.121" endtime="20200805 14:15:36.132">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<status status="FAIL" starttime="20200805 14:15:36.109" endtime="20200805 14:15:36.132" critical="yes">Setup failed:
+LocationValueError: No host specified.
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
 </test>
 <doc>Aqui testes login mobile</doc>
-<status status="FAIL" starttime="20200803 20:22:06.077" endtime="20200803 20:22:06.292"></status>
+<status status="FAIL" starttime="20200805 14:15:35.892" endtime="20200805 14:15:36.134"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="4">Critical Tests</stat>
-<stat pass="0" fail="4">All Tests</stat>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="4" id="s1" name="Login">Login</stat>
+<stat pass="0" fail="1" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20200805 14:15:36.114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200805 14:15:36.124" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200805 14:15:36.130" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
