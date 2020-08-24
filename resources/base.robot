@@ -3,12 +3,13 @@ Documentation           Codigo base para abrir uma sessão com o Appium serven
 
 Library                 AppiumLibrary
 
-Resource                kws.robot
+Resource            elements.robot 
+Resource            kws.robot
 
 ***Keywords***
 #Hooks
 Open Session 
-    Open Application        http:/localhost:4723/wd/hub
+    Open Application        http://localhost:4723/wd/hub
     ...                     automationName=UiAutomator2
     ...                     platformName=Android
     ...                     platformVersion=9
@@ -19,5 +20,5 @@ Open Session
     
 Close Session
     Capture Page Screenshot
-    Close Application
+        Close Application
    
